@@ -28,6 +28,8 @@ import (
 const (
 	nodeBgpIpv4CidrAnnotation = "projectcalico.org/IPv4Address"
 	nodeBgpAsnAnnotation      = "projectcalico.org/ASNumber"
+	nodeBgpReflectorLabel     = "projectcalico.org/reflector"
+	nodeBgpIpv4NetworkLabel   = "projectcalico.org/ipv4-network"
 )
 
 func NewNodeClient(c *kubernetes.Clientset, r *rest.RESTClient) K8sResourceClient {
