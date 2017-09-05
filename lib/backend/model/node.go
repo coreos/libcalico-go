@@ -48,6 +48,8 @@ type Node struct {
 	BGPIPv4Net  *net.IPNet
 	BGPIPv6Net  *net.IPNet
 	BGPASNumber *numorstring.ASNumber
+
+	BGPReflector string
 }
 
 type NodeKey struct {
